@@ -1,4 +1,4 @@
-#Mi Portfolio V2
+## Mi Portfolio V2
 
 Este es el rediseño de mi portfolio personal. 
 Busco una estética minimalista, actual y funcional, poniendo el foco en que sea conciso y facil de leer;
