@@ -8,7 +8,7 @@ const traducciones = {
     projects: "Projects",
     stack: "Stack",
     contact: "Contact",
-    title: "Ingeniero en Informática Student",
+    title: "Software Engineering Student",
     subtitle: "Full Stack Developer",
     viewWork: "View Work",
     resume: "Resume",
