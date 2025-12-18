@@ -1,7 +1,8 @@
 import { ExternalLink } from "lucide-react"
 import { LuGithub } from "react-icons/lu"
-
+import { useLanguage } from "../contexts/LanguageContext";
 export default function ProjectCard({ title, description, tags, image, }) {
+  const {translate} = useLanguage();
   return (
     <div className="bg-card rounded-xl p-6 hover:shadow-lg transition-shadow border border-border/50" >
       {/*Project Image */}
@@ -23,10 +24,10 @@ export default function ProjectCard({ title, description, tags, image, }) {
       </section>
       <section className="flex gap-3">
         <button className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
-          <ExternalLink size={24} /> Previsualización
+          <ExternalLink size={24} /> {translate("proyectCardPreview")}
         </button>
         <button className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
-          <LuGithub size={24} /> Codigo
+          <LuGithub size={24} /> {translate("proyectCardCode")}
         </button>
       </section>
     </div>
