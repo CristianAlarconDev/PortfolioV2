@@ -13,17 +13,16 @@ export default function BentoGrid() {
         <h2 className="text-4xl font-bold mb-12 text-center">{translate("featuredWork")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-max">
           <ProjectCard
-            title="CodigoEmpleo"
-            description="A job board platform connecting employers and job seekers with advanced search and application features."
+            title="Codigo Empleo"
+            description={translate("codigoEmpleoDescription")}
             tags={["React", "Node.js", "MongoDB"]}
             image="/ecommerce-dashboard.png"
           />
           <ProjectCard
-            title="Yet another BattleCity"
-            description="A game built in Java using OOP principles, design patterns, featuring multiple levels, enemy AI, and power-ups."
+            title="Yet another Battle City"
+            description={translate("gameDescription")}
             tags={["Java", "OOP", "JavaFx"]}
             image="/ecommerce-dashboard.png"
-            className="md:col-span-1"
           />
           <TechStackCard />
           <ProfileCard  />
