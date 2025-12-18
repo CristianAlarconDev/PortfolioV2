@@ -16,7 +16,7 @@ export default function Hero() {
                 >
                     {translate("viewWork")} <ArrowRight size={18} />
                 </Link>
-                <a href="/CV_Cristian_Alarcon.pdf" download="CV_Cristian_Alarcon.pdf"
+                <a href="/public/CV-Full-Stack.pdf" download="CV_Cristian_Alarcon.pdf"
                     className="border border-border hover:bg-secondary/50 bg-transparent text-foreground px-8 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all w-full sm:w-auto"
                 >
                     {translate("resume")} <Download size={18} />
