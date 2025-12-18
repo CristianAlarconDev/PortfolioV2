@@ -6,7 +6,7 @@ export default function ProfileCard() {
   const { translate } = useLanguage()
 
   return (
-    <div className="bg-card rounded-xl p-6 border border-border/50 flex flex-col h-full">
+    <section id="contact" className="bg-card rounded-xl p-6 border border-border/50 flex flex-col h-full">
       {/* Profile Header */}
       <section className="flex justify-items-start gap-6 items-center mb-4">
         <LuUser  size={32} color="default" />
@@ -35,6 +35,6 @@ export default function ProfileCard() {
           <LuGithub size={20} color="default" />
         </a>
       </section>
-    </div>
+    </section>
   )
 }

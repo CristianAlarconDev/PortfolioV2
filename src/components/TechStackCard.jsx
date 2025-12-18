@@ -15,7 +15,7 @@ export default function TechStackCard() {
   ];
 
   return (
-    <div className="bg-card rounded-xl p-6 border border-border/50">
+    <section id="technologies" className="bg-card rounded-xl p-6 border border-border/50">
       {/* Header */}
       <section className="flex justify-center items-center gap-2 mb-4">
           <Code2 size={32} className="text-primary" />
@@ -31,6 +31,6 @@ export default function TechStackCard() {
           </div>
         ))}
       </section>
-    </div>
+    </section>
   )
 }
