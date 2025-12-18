@@ -26,19 +26,19 @@ export default function Navbar() {
         >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
-            <Link href="#" className="text-xl font-bold text-primary">
+            <Link to="home" smooth={true} duration={500} className="cursor-pointer text-xl font-bold text-primary">
                 Cristian Alarcon 
             </Link>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8 items-center">
-                <Link href="#projects" className="text-foreground/70 hover:text-foreground transition-colors">
+                <Link to= "projects" smooth={true} duration={500} className="cursor-pointer text-foreground/70 hover:text-foreground transition-colors">
                 {translate("projects")}
                 </Link>
-                <Link href="#stack" className="text-foreground/70 hover:text-foreground transition-colors">
+                <Link to="technologies" smooth={true} duration={500} className="cursor-pointer text-foreground/70 hover:text-foreground transition-colors">
                 {translate("stack")}
                 </Link>
-                <Link href="#contact" className="text-foreground/70 hover:text-foreground transition-colors">
+                <Link to="contact" smooth={true} duration={500} className="cursor-pointer text-foreground/70 hover:text-foreground transition-colors">
                 {translate("contact")}
                 </Link>
 
@@ -83,13 +83,13 @@ export default function Navbar() {
             {/* Mobile Menu */}
             {isOpen && (
             <div className="md:hidden pb-4 space-y-2">
-                <Link href="#projects" className="block text-foreground/70 hover:text-foreground transition-colors py-2">
+                <Link to="projects" smooth={true} duration={500} className=" cursor-pointer block text-foreground/70 hover:text-foreground transition-colors py-2">
                 {translate("projects")}
                 </Link>
-                <Link href="#stack" className="block text-foreground/70 hover:text-foreground transition-colors py-2">
+                <Link to="technologies" smooth={true} duration={500} className=" cursor-pointer block text-foreground/70 hover:text-foreground transition-colors py-2">
                 {translate("stack")}
                 </Link>
-                <Link href="#contact" className="block text-foreground/70 hover:text-foreground transition-colors py-2">
+                <Link to="contact" smooth={true} duration={500} className=" cursor-pointer block text-foreground/70 hover:text-foreground transition-colors py-2">
                 {translate("contact")}
                 </Link>
             </div>
