@@ -1,22 +1,24 @@
 import { Code2 } from "lucide-react"
 import { useLanguage } from "../contexts/LanguageContext"
-import { SiJavascript, SiReact, SiNodedotjs,SiMongodb,SiOracle, SiGithub} from "react-icons/si";
+import { SiJavascript, SiReact, SiNodedotjs,SiMongodb,SiOracle, SiGithub, SiTailwindcss} from "react-icons/si";
+import { DiJava } from 'react-icons/di';
 export default function TechStackCard() {
   const { translate } = useLanguage()
   const technologiesStack = [
-    { name: "Java", icon: <SiOracle /> },
+    { name: "Java", icon: <DiJava  /> },
     { name: "Javascript", icon: <SiJavascript /> },
-    { name: "React", icon: <SiReact /> },
+    { name: "React.js", icon: <SiReact /> },
     { name: "Node.js", icon: <SiNodedotjs /> },
     { name: "MongoDB", icon: <SiMongodb />},
-    { name:"Github", icon:<SiGithub />}
+    { name:"Github", icon:<SiGithub />},
+    { name:"TailwindCSS", icon:<SiTailwindcss />},
   ];
 
   return (
     <div className="bg-card rounded-xl p-6 border border-border/50">
       {/* Header */}
       <section className="flex justify-center items-center gap-2 mb-4">
-          <Code2 size={22} className="text-primary" />
+          <Code2 size={32} className="text-primary" />
           <h3 className="text-xl font-bold">{translate("techStackTitle")}</h3>
       </section>
       {/* Tech Stack Grid */}
