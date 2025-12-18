@@ -32,9 +32,6 @@ export default function Navbar() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8 items-center">
-                <Link href="#home" className="text-foreground/70 hover:text-foreground transition-colors">
-                {translate("home")}
-                </Link>
                 <Link href="#projects" className="text-foreground/70 hover:text-foreground transition-colors">
                 {translate("projects")}
                 </Link>
@@ -58,8 +55,7 @@ export default function Navbar() {
                 className="p-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
                 aria-label="Toggle language"
                 >
-                <Globe size={20} />
-                <span className="text-xs ml-1">{language.toUpperCase()}</span>
+                <span className="text-foreground/70">{language.toUpperCase()}</span>
                 </button>
             </div>
 
@@ -77,7 +73,6 @@ export default function Navbar() {
                 className="p-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
                 aria-label="Toggle language"
                 >
-                <Globe size={20} />
                 </button>
                 <button className="md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -88,9 +83,6 @@ export default function Navbar() {
             {/* Mobile Menu */}
             {isOpen && (
             <div className="md:hidden pb-4 space-y-2">
-                <Link href="#home" className="block text-foreground/70 hover:text-foreground transition-colors py-2">
-                {translate("home")}
-                </Link>
                 <Link href="#projects" className="block text-foreground/70 hover:text-foreground transition-colors py-2">
                 {translate("projects")}
                 </Link>
