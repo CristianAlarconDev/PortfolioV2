@@ -7,7 +7,7 @@ export default function Hero() {
     return (
         <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">{translate("title")}</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-balance">{translate("title")}</h1>
             <p className="text-xl md:text-2xl text-foreground/70 mb-12 text-balance">{translate("subtitle")}</p>
             {/* Call to Action Buttons */}
             <section className="flex flex-col sm:flex-row gap-4 justify-center">
