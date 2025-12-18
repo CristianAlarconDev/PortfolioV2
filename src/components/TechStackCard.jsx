@@ -9,7 +9,7 @@ export default function TechStackCard() {
     { name: "React", icon: <SiReact /> },
     { name: "Node.js", icon: <SiNodedotjs /> },
     { name: "MongoDB", icon: <SiMongodb />},
-    { name:"Github", icon: <SiGithub />}
+    { name:"Github", icon:<SiGithub />}
   ];
 
   return (
