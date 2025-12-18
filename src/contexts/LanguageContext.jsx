@@ -21,6 +21,11 @@ const traducciones = {
     degree: "Ingeniería en Informática",
     university: "Universidad de Buenos Aires",
     footerText: "Something descriptive to go later",
+    codigoEmpleoDescription: 
+    "A job board platform connecting employers and job seekers with advanced search and application features.",
+    proyectCardPreview: "Project Preview",
+    proyectCardCode: "View Code",
+
   },
   es: {
     home: "Inicio",
@@ -40,6 +45,10 @@ const traducciones = {
     degree: "Ingeniería en Informática",
     university: "Universidad de Buenos Aires",
     footerText: "Algo descriptivo para luego",
+    codigoEmpleoDescription:
+      "Plataforma de empleo que vincula empresas y postulantes con sistemas de búsqueda avanzada y aplicación directa.",
+    proyectCardPreview: "Previsualización",
+    proyectCardCode: "Ver Código",
   },
 }
 
