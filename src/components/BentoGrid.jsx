@@ -16,13 +16,17 @@ export default function BentoGrid() {
             title="Codigo Empleo"
             description={translate("codigoEmpleoDescription")}
             tags={["React", "Node.js", "MongoDB"]}
-            image="/ecommerce-dashboard.png"
+            image="/public/CodigoEmpleo.png"
+            githubLink="https://github.com/CristianAlarconDev/CodigoEmpleoV2"
+            demoLink="https://codigoempleoit.netlify.app/"
           />
           <ProjectCard
             title="Yet another Battle City"
             description={translate("gameDescription")}
             tags={["Java", "OOP", "JavaFx"]}
-            image="/ecommerce-dashboard.png"
+            image="/public/yabc.png"
+            githubLink="https://github.com/CristianAlarconDev/BattleCityTP"
+            demoLink=""
           />
           <TechStackCard />
           <ProfileCard  />
