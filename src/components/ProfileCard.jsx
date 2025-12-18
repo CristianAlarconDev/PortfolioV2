@@ -15,15 +15,25 @@ export default function ProfileCard() {
       <p className="text-foreground/70 mb-6">{translate("profileDesc")}</p>
       {/* Social Links */}
       <section className="flex gap-3 mt-auto">
-        <button className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors">
+        <a href="mailto:calarcon@fi.uba.ar" target="_blank" rel="noopener noreferrer" 
+        className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors flex items-center justify-center text-foreground"
+        aria-label="Email"
+        >
           <LuMail size={20} color="default" />
-        </button>
-        <button className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors">
+        </a>
+
+        <a href="https://www.linkedin.com/in/cristianalarcondevfiuba" target="_blank" rel="noopener noreferrer"
+          className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors flex items-center justify-center text-foreground"
+          aria-label="LinkedIn"
+        >
           <LuLinkedin size={20} color="default" />
-        </button>
-        <button className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors">
+        </a>
+        <a href="https://github.com/CristianAlarconDev" target="_blank" rel="noopener noreferrer"
+          className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors flex items-center justify-center text-foreground"
+          aria-label="GitHub"
+        >
           <LuGithub size={20} color="default" />
-        </button>
+        </a>
       </section>
     </div>
   )
