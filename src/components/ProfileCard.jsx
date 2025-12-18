@@ -1,4 +1,5 @@
-import { Mail, Linkedin, Github } from "lucide-react"
+import React from "react";
+import { LuLinkedin, LuGithub, LuMail } from "react-icons/lu";
 import { useLanguage } from "../contexts/LanguageContext"
 
 export default function ProfileCard() {
@@ -17,13 +18,13 @@ export default function ProfileCard() {
       <p className="text-foreground/70 mb-6">{translate("profileDesc")}</p>
       <div className="flex gap-3">
         <button className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors">
-          <Mail size={20} />
+          <LuMail size={20} color="default" />
         </button>
         <button className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors">
-          <Linkedin size={20} />
+          <LuLinkedin size={20} color="default" />
         </button>
         <button className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors">
-          <Github size={20} />
+          <LuGithub size={20} color="default" />
         </button>
       </div>
     </div>
