@@ -23,6 +23,8 @@ const traducciones = {
     footerText: "Something descriptive to go later",
     codigoEmpleoDescription: 
     "A job board platform connecting employers and job seekers with advanced search and application features.",
+    gameDescription: 
+    "A game built in Java using OOP principles, design patterns, featuring multiple levels, enemy AI, and power-ups.",
     proyectCardPreview: "Project Preview",
     proyectCardCode: "View Code",
 
@@ -48,6 +50,8 @@ const traducciones = {
     codigoEmpleoDescription:
       "Plataforma de empleo que vincula empresas y postulantes con sistemas de búsqueda avanzada y aplicación directa.",
     proyectCardPreview: "Previsualización",
+    gameDescription: 
+    "Un juego construido en Java usando principios de programación orientada a objetos, patrones de diseño, con múltiples niveles, IA enemiga y power ups.",
     proyectCardCode: "Ver Código",
   },
 }
