@@ -1,6 +1,6 @@
 import { Code2 } from "lucide-react"
 import { useLanguage } from "../contexts/LanguageContext"
-import { SiJavascript, SiReact, SiNodedotjs,SiMongodb,SiOracle, SiGithub, SiTailwindcss} from "react-icons/si";
+import { SiJavascript, SiReact, SiNodedotjs,SiMongodb,SiHtml5, SiGithub, SiTailwindcss} from "react-icons/si";
 import { DiJava } from 'react-icons/di';
 export default function TechStackCard() {
   const { translate } = useLanguage()
@@ -12,6 +12,7 @@ export default function TechStackCard() {
     { name: "MongoDB", icon: <SiMongodb />},
     { name:"Github", icon:<SiGithub />},
     { name:"TailwindCSS", icon:<SiTailwindcss />},
+    { name:"HTML5", icon:<SiHtml5 />},
   ];
 
   return (
