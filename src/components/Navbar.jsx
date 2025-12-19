@@ -58,19 +58,6 @@ export default function Navbar() {
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-2">
-                <button
-                onClick={toggleTheme}
-                className="p-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
-                aria-label="Toggle theme"
-                >
-                {isDark ? <Sun size={20} /> : <Moon size={20} />}
-                </button>
-                <button
-                onClick={toggleLanguage}
-                className="p-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
-                aria-label="Toggle language"
-                >
-                </button>
                 <button className="md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
@@ -89,7 +76,23 @@ export default function Navbar() {
                 <Link to="contact" smooth={true} duration={500} className=" cursor-pointer block text-foreground/70 hover:text-foreground transition-colors py-2">
                 {translate("contact")}
                 </Link>
-            </div>
+                <div className="mt-3 pt-3 border-t flex items-center justify-start gap-4">
+                    <button onClick={toggleTheme}
+                        className="p-2 rounded-lg "
+                        aria-label="Toggle theme"
+                    >
+                        {isDark ? <Sun size={20} /> : <Moon size={20} />}
+                    </button>
+
+                    <button onClick={toggleLanguage}
+                        className="p-2 rounded-lg bg-card flex items-center gap-2"
+                        aria-label="Toggle language"
+                    >
+                        <Globe size={18} />
+                        <span className="text-sm font-semibold text-foreground/70">{language.toUpperCase()}</span>
+                    </button>
+                    </div>
+                </div>
             )}
         </div>
         </nav>
