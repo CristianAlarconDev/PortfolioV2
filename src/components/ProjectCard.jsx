@@ -4,8 +4,9 @@ import { useLanguage } from "../contexts/LanguageContext";
 export default function ProjectCard({ title, description, tags, image, githubLink, demoLink }) {
   const {translate} = useLanguage();
   return (
-    <div className="bg-card rounded-xl p-6 hover:shadow-lg transition-shadow border border-border/50
-    flex flex-col h-full" >
+    <div className="bg-card rounded-2xl p-6 border  flex flex-col h-full
+                  transition-all duration-200
+                  hover:-translate-y-1 hover:shadow-xl " >
       {/*Project Image */}
       <section className="mb-4 rounded-lg overflow-hidden bg-secondary h-40">
         <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />
@@ -16,15 +17,17 @@ export default function ProjectCard({ title, description, tags, image, githubLin
         <p className="text-foreground/70 mb-4">{description}</p>
       </section>
       {/* Tags */}
-      <section className="flex flex-wrap gap-2 mb-4 mt-auto">
+      <section className="flex flex-wrap gap-2 mb-5 mt-auto">
         {tags.map((tag) => (
-          <span key={tag} className="px-3 py-1 bg-secondary text-xs rounded-full text-foreground/80">
+          <span key={tag} className="px-3 py-1 rounded-full text-xs font-medium
+                      text-foreground/80 border ">
             {tag}
           </span>
         ))}
+        
       </section>
       {/* Links */}
-      <section className="flex gap-3">
+      <section className="flex gap-4">
         <a href={demoLink} target="_blank" rel="noopener noreferrer" 
           className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium text-sm">
           <ExternalLink size={22} /> {translate("proyectCardPreview")}
