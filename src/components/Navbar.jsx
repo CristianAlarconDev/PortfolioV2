@@ -19,9 +19,8 @@ export default function Navbar() {
     }, [])
 
     return (
-        <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-            isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : "bg-transparent"
+        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+            isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : "bg-white/30 px-4 py-2 "
         }`}
         >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,28 +31,26 @@ export default function Navbar() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8 items-center">
-                <Link to= "projects" smooth={true} duration={500} className="cursor-pointer text-foreground/70 hover:text-foreground transition-colors">
+                <Link to= "projects" smooth={true} duration={500} className=" cursor-pointer font-semibold">
                 {translate("projects")}
                 </Link>
-                <Link to="technologies" smooth={true} duration={500} className="cursor-pointer text-foreground/70 hover:text-foreground transition-colors">
+                <Link to="technologies" smooth={true} duration={500} className="cursor-pointer font-semibold">
                 {translate("stack")}
                 </Link>
-                <Link to="contact" smooth={true} duration={500} className="cursor-pointer text-foreground/70 hover:text-foreground transition-colors">
+                <Link to="contact" smooth={true} duration={500} className="cursor-pointer font-semibold">
                 {translate("contact")}
                 </Link>
 
-                <button
-                onClick={toggleTheme}
-                className="p-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
-                aria-label="Toggle theme"
+                <button onClick={toggleTheme}
+                    className="p-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
+                    aria-label="Toggle theme"
                 >
                 {isDark ? <Sun size={20} /> : <Moon size={20} />}
                 </button>
 
-                <button
-                onClick={toggleLanguage}
-                className="p-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
-                aria-label="Toggle language"
+                <button onClick={toggleLanguage}
+                    className="cursor-pointer p-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
+                    aria-label="Toggle language"
                 >
                 <span className="text-foreground/70">{language.toUpperCase()}</span>
                 </button>
