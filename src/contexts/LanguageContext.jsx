@@ -20,7 +20,7 @@ const traducciones = {
     educationTitle: "Education",
     degree: "Ingeniería en Informática",
     university: "Universidad de Buenos Aires",
-    footerText: "Something descriptive to go later",
+    footerText: "If you'd like to chat about a project, an opportunity, or collaborate, feel free to reach out.",
     codigoEmpleoDescription: 
     "A job board platform connecting employers and job seekers with advanced search and application features.",
     gameDescription: 
@@ -48,7 +48,7 @@ const traducciones = {
     educationTitle: "Educación",
     degree: "Ingeniería en Informática",
     university: "Universidad de Buenos Aires",
-    footerText: "Algo descriptivo para luego",
+    footerText: "Si querés charlar sobre un proyecto, una oportunidad o colaborar, escribime.",
     codigoEmpleoDescription:
       "Plataforma de empleo que vincula empresas y postulantes con sistemas de búsqueda avanzada y aplicación directa.",
     proyectCardPreview: "Previsualización",
