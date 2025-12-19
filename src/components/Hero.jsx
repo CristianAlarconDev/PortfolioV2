@@ -8,10 +8,12 @@ export default function Hero() {
         <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden ">
             <div className="absolute inset-0 z-0">
             <img src="/fachada.jpg" alt="Facultad de Ingeniería UBA" 
-                className="w-full h-full object-cover blur-[10px] scale-105 saturate-[0.8]"
+                className="w-full h-full object-cover "
             />
-            </div>
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
+            </div>   
+        {/* Gradiente claro semitransparente */}
+        <div className="absolute inset-0 z-10 bg-linear-to-b via-white/52"></div>
+        <div className="relative z-20 max-w-4xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-balance">{translate("title")}</h1>
             <p className="text-xl md:text-2xl text-foreground/70 mb-12 text-balance">{translate("subtitle")}</p>
             {/* Call to Action Buttons */}
