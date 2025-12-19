@@ -27,7 +27,9 @@ const traducciones = {
     "A game built in Java using OOP principles, design patterns, featuring multiple levels, enemy AI, and power-ups.",
     proyectCardPreview: "Project Preview",
     proyectCardCode: "View Code",
-
+    gradeStatus: "Ongoing",
+    bootcampStatus: "Completed in December 2025",
+    commingSoon: "Coming Soon",
   },
   es: {
     home: "Inicio",
@@ -53,6 +55,9 @@ const traducciones = {
     gameDescription: 
     "Un juego construido en Java usando principios de programación orientada a objetos, patrones de diseño, con múltiples niveles, IA enemiga y power ups.",
     proyectCardCode: "Ver Código",
+    gradeStatus: "En curso",
+    bootcampStatus: "Finalizado en diciembre 2025",
+    commingSoon: "Próximamente",
   },
 }
 

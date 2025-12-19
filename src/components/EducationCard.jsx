@@ -19,7 +19,7 @@ export default function EducationCard() {
             Ingeniería en Informática
           </h4>
           <p className="text-foreground/70">Universidad de Buenos Aires</p>
-          <p className="text-foreground/70 font-semibold">Actualmente 3er año</p>
+          <p className="text-foreground/70 font-semibold">{translate("gradeStatus")}</p>
         </div>
 
         {/* Capacitación */}
@@ -28,7 +28,7 @@ export default function EducationCard() {
             Capacitación Full Stack MERN
           </h4>
           <p className="text-foreground">Educación IT •</p>
-          <p className="text-foreground/70 font-semibold ">Finalizado en diciembre 2025</p>
+          <p className="text-foreground/70 font-semibold ">{translate("bootcampStatus")}</p>
         </div>
 
         {/* Futuro cercano */}
@@ -38,7 +38,7 @@ export default function EducationCard() {
             Java Backend & Spring Boot
           </h4>
           <p className="text-foreground/70 font-semibold ">
-            Próximamente
+            {translate("commingSoon")}
           </p>
         </div>
         
