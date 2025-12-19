@@ -15,7 +15,7 @@ export default function BentoGrid() {
           <ProjectCard
             title="Codigo Empleo"
             description={translate("codigoEmpleoDescription")}
-            tags={["React", "Node.js", "MongoDB"]}
+            tags={["React.js", "Node.js", "MongoDB"]}
             image="/CodigoEmpleo.png"
             githubLink="https://github.com/CristianAlarconDev/CodigoEmpleoV2"
             demoLink="https://codigoempleoit.netlify.app/"
