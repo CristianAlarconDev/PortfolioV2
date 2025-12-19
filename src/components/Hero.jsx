@@ -19,12 +19,13 @@ export default function Hero() {
             {/* Call to Action Buttons */}
             <section className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="projects" smooth={true} duration={500}
-                    className="cursor-pointer bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all w-full sm:w-auto"
-                >
+                    className="cursor-pointer bg-black/60  text-white px-8  rounded-xl font-semibold 
+                    flex items-center justify-center gap-2 hover:bg-black/70 ">
                     {translate("viewWork")} <ArrowRight size={18} />
                 </Link>
                 <a href="/public/CV-Full-Stack.pdf" download="CV_Cristian_Alarcon.pdf"
-                    className="border border-border hover:bg-secondary/50 bg-transparent text-foreground px-8 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all w-full sm:w-auto"
+                    className="bg-white/30 border  text-black px-8 py-3 rounded-xl font-semibold 
+                    flex items-center justify-center gap-2 hover:bg-white/50 "
                 >
                     {translate("resume")} <Download size={18} />
                 </a>
