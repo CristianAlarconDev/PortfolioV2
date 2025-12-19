@@ -18,17 +18,22 @@ export default function Hero() {
             <p className="text-xl md:text-2xl text-foreground/70 mb-12 text-balance">{translate("subtitle")}</p>
             {/* Call to Action Buttons */}
             <section className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-3 justify-center mt-10 w-full sm:w-auto">
+
                 <Link to="projects" smooth={true} duration={500}
-                    className="cursor-pointer bg-black/60  text-white px-8  rounded-xl font-semibold 
-                    flex items-center justify-center gap-2 hover:bg-black/70 ">
+                    className="cursor-pointer bg-black/60 text-white px-8 py-3 rounded-xl font-semibold
+                    flex items-center justify-center gap-2 hover:bg-black/70
+                    w-full max-w-sm mx-auto sm:w-auto sm:max-w-none sm:mx-0 whitespace-nowrap ">
                     {translate("viewWork")} <ArrowRight size={18} />
                 </Link>
                 <a href="/CV-Full-Stack.pdf" download="CV_Cristian_Alarcon.pdf"
                     className="bg-white/30 border  text-black px-8 py-3 rounded-xl font-semibold 
-                    flex items-center justify-center gap-2 hover:bg-white/50 "
+                    flex items-center justify-center gap-2 hover:bg-white/50
+                    w-full max-w-sm mx-auto sm:w-auto sm:max-w-none sm:mx-0 whitespace-nowrap "
                 >
                     {translate("resume")} <Download size={18} />
                 </a>
+                </div>
             </section>
         </div>
         </section>
