@@ -16,7 +16,7 @@ export default function BentoGrid() {
             title="Codigo Empleo"
             description={translate("codigoEmpleoDescription")}
             tags={["React", "Node.js", "MongoDB"]}
-            image="/public/CodigoEmpleo.png"
+            image="/CodigoEmpleo.png"
             githubLink="https://github.com/CristianAlarconDev/CodigoEmpleoV2"
             demoLink="https://codigoempleoit.netlify.app/"
           />
@@ -24,7 +24,7 @@ export default function BentoGrid() {
             title="Yet another Battle City"
             description={translate("gameDescription")}
             tags={["Java", "OOP", "JavaFx"]}
-            image="/public/yabc.png"
+            image="/yabc.png"
             githubLink="https://github.com/CristianAlarconDev/BattleCityTP"
             demoLink=""
           />
