@@ -25,7 +25,7 @@ export default function TechStackCard() {
       {/* Tech Stack Grid */}
       <section className="grid grid-cols-2 gap-3">
         {technologiesStack.map((tech) => (
-          <div key={tech.name} className=" flex flex-col items-center justify-center rounded-lg p-3 text-center ">
+          <div key={tech.name} className=" flex flex-col items-center justify-center rounded-lg p-3 text-center border ">
             <div className=" text-2xl mb-1">{tech.icon}
             </div>
             <p className="text-sm font-medium">{tech.name}</p>
