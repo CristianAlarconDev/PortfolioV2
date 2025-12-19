@@ -14,25 +14,34 @@ export default function ProfileCard() {
       </section>
       <p className="text-foreground/70 mb-6">{translate("profileDesc")}</p>
       {/* Social Links */}
-      <section className="flex gap-3 mt-auto">
+      <section className="flex gap-2 mt-auto">
         <a href="mailto:calarcon@fi.uba.ar" target="_blank" rel="noopener noreferrer" 
         className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors flex items-center justify-center text-foreground"
         aria-label="Email"
         >
-          <LuMail size={20} color="default" />
+          <div className="flex items-center justify-center gap-2">
+            <LuMail size={20} color="default" />
+            <span>Email</span>
+          </div>
         </a>
 
         <a href="https://www.linkedin.com/in/cristianalarcondevfiuba" target="_blank" rel="noopener noreferrer"
           className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors flex items-center justify-center text-foreground"
           aria-label="LinkedIn"
         >
-          <LuLinkedin size={20} color="default" />
+          <div className="flex items-center justify-center gap-2">
+            <LuLinkedin size={20} color="default" />
+          <span>Linkedin</span>
+          </div>
         </a>
         <a href="https://github.com/CristianAlarconDev" target="_blank" rel="noopener noreferrer"
           className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors flex items-center justify-center text-foreground"
           aria-label="GitHub"
         >
-          <LuGithub size={20} color="default" />
+          <div className="flex items-center justify-center gap-2">
+            <LuGithub size={20} color="default" />
+          <span>Github</span>
+          </div>
         </a>
       </section>
     </section>
