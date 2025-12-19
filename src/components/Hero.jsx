@@ -23,7 +23,7 @@ export default function Hero() {
                     flex items-center justify-center gap-2 hover:bg-black/70 ">
                     {translate("viewWork")} <ArrowRight size={18} />
                 </Link>
-                <a href="/public/CV-Full-Stack.pdf" download="CV_Cristian_Alarcon.pdf"
+                <a href="/CV-Full-Stack.pdf" download="CV_Cristian_Alarcon.pdf"
                     className="bg-white/30 border  text-black px-8 py-3 rounded-xl font-semibold 
                     flex items-center justify-center gap-2 hover:bg-white/50 "
                 >
