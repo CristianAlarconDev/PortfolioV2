@@ -6,7 +6,7 @@ export default function Footer() {
     const { translate } = useLanguage()
     const year = new Date().getFullYear()
 
-    const email = "cristianalarcondev@gmail.com"
+    const email = "calarcon@fi.uba.ar"
     const github = "https://github.com/CristianAlarconDev"
     const linkedin = "https://www.linkedin.com/in/cristian-alarcon-dev/" 
 
@@ -19,7 +19,7 @@ export default function Footer() {
     }
 
     return (
-    <footer id="contact" className="mt-20 border-t border-border bg-background">
+    <footer id="contact" className="mt-20 border-t border-border bg-gray-300/80"> 
         <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           {/* Left */}
