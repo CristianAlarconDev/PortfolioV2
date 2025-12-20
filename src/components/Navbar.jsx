@@ -40,19 +40,19 @@ export default function Navbar() {
                 <Link to="contact" smooth={true} duration={500} className="cursor-pointer font-semibold">
                 {translate("contact")}
                 </Link>
-
+                {/*}
                 <button onClick={toggleTheme}
-                    className="p-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
+                    className="p-2 rounded-lg hover:bg-card/80 transition-colors"
                     aria-label="Toggle theme"
                 >
                 {isDark ? <Sun size={20} /> : <Moon size={20} />}
                 </button>
-
+                    */}
                 <button onClick={toggleLanguage}
-                    className="cursor-pointer p-2 rounded-lg bg-card hover:bg-card/80 transition-colors"
+                    className="cursor-pointer p-2 rounded-lg hover:bg-card/80 transition-colors"
                     aria-label="Toggle language"
                 >
-                <span className="text-foreground/70">{language.toUpperCase()}</span>
+                <span className="text-foretext font-semibold">{language.toUpperCase()}</span>
                 </button>
             </div>
 
@@ -77,15 +77,16 @@ export default function Navbar() {
                 {translate("contact")}
                 </Link>
                 <div className="mt-3 pt-3 border-t flex items-center justify-start gap-4">
+                    {/*}
                     <button onClick={toggleTheme}
                         className="p-2 rounded-lg "
                         aria-label="Toggle theme"
                     >
                         {isDark ? <Sun size={20} /> : <Moon size={20} />}
                     </button>
-
+                    {*/}
                     <button onClick={toggleLanguage}
-                        className="p-2 rounded-lg bg-card flex items-center gap-2"
+                        className="p-2 rounded-lg flex items-center gap-2"
                         aria-label="Toggle language"
                     >
                         <Globe size={18} />
