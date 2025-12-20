@@ -16,7 +16,7 @@ export default function TechStackCard() {
   ];
 
   return (
-    <section id="technologies" className="bg-card rounded-xl p-6 border border-border/50">
+    <section id="technologies" className="bg-card rounded-xl p-6 border border-border/90">
       {/* Header */}
       <section className="flex justify-center items-center gap-2 mb-4">
           <Code2 size={32} className="text-primary" />
@@ -25,10 +25,10 @@ export default function TechStackCard() {
       {/* Tech Stack Grid */}
       <section className="grid grid-cols-2 gap-3">
         {technologiesStack.map((tech) => (
-          <div key={tech.name} className=" flex flex-col items-center justify-center rounded-lg p-3 text-center border ">
+          <div key={tech.name} className=" flex flex-col items-center justify-center rounded-lg p-3 text-center border border-border/90">
             <div className=" text-2xl mb-1">{tech.icon}
             </div>
-            <p className="text-sm font-medium">{tech.name}</p>
+            <p className="text-sm font-medium text-card-text">{tech.name}</p>
           </div>
         ))}
       </section>
