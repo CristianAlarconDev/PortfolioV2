@@ -1,11 +1,12 @@
 import {  LuGithub, LuLinkedin } from "react-icons/lu";
 import { useLanguage } from "../contexts/LanguageContext"
-import {ArrowUpRight, Mail} from "lucide-react";
+import {ArrowUpRight, Mail,Check} from "lucide-react";
+import { useState } from "react";
 
 export default function Footer() {
     const { translate } = useLanguage()
     const year = new Date().getFullYear()
-
+    const [copied, setCopied] = useState(false)
     const email = "calarcon@fi.uba.ar"
     const github = "https://github.com/CristianAlarconDev"
     const linkedin = "https://www.linkedin.com/in/cristian-alarcon-dev/" 
@@ -13,6 +14,11 @@ export default function Footer() {
     const copyEmail = async () => {
         try {
             await navigator.clipboard.writeText(email)
+            setCopied(true) 
+            setTimeout(() => {
+                setCopied(false)
+            }, 2000)
+            
         } catch (e) {
             window.location.href = `mailto:${email}`
         }
@@ -33,14 +39,17 @@ export default function Footer() {
                 </p>
 
                 <div className="mt-4 flex flex-wrap gap-3">
-                <button
-                    onClick={copyEmail}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-card border border-border/50 hover:bg-card/80 transition"
-                >
-                    <Mail size={18} />
-                    <span className="font-medium">Copiar </span>
-                </button>
-
+                <button onClick={copyEmail}
+                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl border transition-all duration-200 
+                    ${copied ? "bg-green-100 border-green-500 text-green-700" 
+                                : "bg-card border-border/50 hover:bg-card/80 text-foreground"
+                        }`
+                    }>
+                    {copied ? <Check size={18} /> : <Mail size={18} />}
+                    <span className="font-medium">
+                    {copied ? "¡Copiado!" : "Copiar"} 
+                        </span>
+                    </button>
                 <a
                     href={`mailto:${email}`}
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-card border border-border/50 hover:bg-card/80 transition"
