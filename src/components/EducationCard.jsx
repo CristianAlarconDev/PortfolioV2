@@ -4,7 +4,7 @@ import { useLanguage } from "../contexts/LanguageContext"
 export default function EducationCard() {
   const { translate } = useLanguage()
   return (
-    <div className="bg-card rounded-xl p-6 border border-border/90">
+    <div className="bg-card rounded-xl p-6 border border-border/90 shadow-xl">
       {/* Header */}
       <section className="flex items-center justify-start gap-6 mb-4">
         <BookOpen size={32} className="text-primary" />
