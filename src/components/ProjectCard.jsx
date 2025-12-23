@@ -5,8 +5,8 @@ export default function ProjectCard({ title, description, tags, image, githubLin
   const {translate} = useLanguage();
   return (
     <div className="bg-card rounded-2xl p-6 border border-border flex flex-col h-full
-                  transition-all duration-200
-                  hover:-translate-y-1 hover:shadow-xl " >
+                  transition-all duration-200 shadow-xl
+                  hover:-translate-y-1 hover:shadow-2xl " >
       {/*Project Image */}
       <section className="mb-4 rounded-lg overflow-hidden bg-secondary h-40">
         <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />
