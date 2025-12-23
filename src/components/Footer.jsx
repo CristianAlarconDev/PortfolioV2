@@ -7,9 +7,9 @@ export default function Footer() {
     const { translate } = useLanguage()
     const year = new Date().getFullYear()
     const [copied, setCopied] = useState(false)
-    const email = "calarcon@fi.uba.ar"
-    const github = "https://github.com/CristianAlarconDev"
-    const linkedin = "https://www.linkedin.com/in/cristian-alarcon-dev/" 
+    const email = import.meta.env.VITE_EMAIL || ""
+    const github = import.meta.env.VITE_GITHUB_URL || ""
+    const linkedin = import.meta.env.VITE_LINKEDIN_URL || "" 
 
     const copyEmail = async () => {
         try {
@@ -42,7 +42,7 @@ export default function Footer() {
                 <button onClick={copyEmail}
                     className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl border transition-all duration-200 
                     ${copied ? "bg-green-100 border-green-500 text-green-700" 
-                                : "bg-card border-border/50 hover:bg-card/80 text-foreground"
+                                : "bg-card border-border/50 hover:bg-card/80 text-foretext"
                         }`
                     }>
                     {copied ? <Check size={18} /> : <Mail size={18} />}
@@ -63,12 +63,12 @@ export default function Footer() {
           {/* Right */}
             <div className="flex flex-col gap-3">
                 <a href={github} target="_blank"rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-foreground/80 hover:text-foreground transition"
+                className="inline-flex items-center gap-2 text-foreground/80 hover:text-foretext transition"
                 >
                     <LuGithub size={20} /> GitHub
                 </a>
                 <a href={linkedin} target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-foreground/80 hover:text-foreground transition"
+                    className="inline-flex items-center gap-2 text-foreground/80 hover:text-foretext transition"
                 >
                     <LuLinkedin size={20} /> LinkedIn
                 </a>
